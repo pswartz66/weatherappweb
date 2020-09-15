@@ -1,33 +1,36 @@
 
-
-
 .App {
   background-image: url('./assets/sky-background-img.jpg');
   background-size: cover;
   background-position: bottom;
-
+  background-repeat: no-repeat;
 }
 
 main {
   min-height: 100vh;
   text-align: center;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.55));
-  /* padding: 15px; */
+  padding: 20px;
 }
 
-.searchbar {
-  position: relative;
-  top: 40px;
-  height: 40px;
+.searchbox {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.searchbox .searchbar {
+  display: center;
+  height: 30px;
   width: 240px;
 
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 10px;
 
   font-size: 16px;
 
   border: none;
   border-radius: 10px;
+
+  appearance: none;
+  outline: none;
 
   box-shadow: 0px 2px rgba(0, 0, 0, 0.25);
 
@@ -41,4 +44,28 @@ main {
 .searchbar:hover { 
   background-color: white;
   text-decoration: none;
+}
+
+.weather-location {
+  display: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.weather-location .location {
+  margin: 10px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  color: black;
+}
+.weather-location .date {
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
