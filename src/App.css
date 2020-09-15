@@ -63,7 +63,7 @@ main {
 }
 .weather-location .date {
   margin: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
