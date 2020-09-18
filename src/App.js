@@ -25,6 +25,16 @@ function App() {
 
         </div>
 
+        <div className="weather-data">
+          <div className="temperature">
+            15°c
+
+          </div>
+          <div className="description">
+            Sunny
+          </div>
+        </div>
+
       </main>
 
 
