@@ -68,11 +68,11 @@ function App() {
 
             <div className="weather-data">
               <div className="temperature">
-                {`${Math.round(weather.main.temp * (9/5) + 32)}°f`}
-          </div>
+                {`${Math.round(weather.main.temp * (9 / 5) + 32)}°f`}
+              </div>
               <div className="description">
                 {`${weather.weather[0].main}`}
-          </div>
+              </div>
             </div>
           </div>
         ) : (null)}
