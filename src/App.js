@@ -25,7 +25,6 @@ function App() {
     }
   }
 
-
   // fetch the forecast using a diff url
   // const search = (evnt) => {
   //   if (evnt.key === "Enter") {
@@ -78,9 +77,7 @@ function App() {
           </div>
         ) : (null)}
 
-
       </main>
-
 
     </div>
   );
