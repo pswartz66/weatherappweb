@@ -57,8 +57,26 @@ function App() {
 
           </input>
         </div>
+        {(typeof weather.main != "undefined") ? (
+          <div>
+            <div className="weather-location">
+              <div className="location">{`${weather.name}, ${weather.sys.country}`}</div>
+              <div className="date">{todayDateFormat}</div>
 
-        
+            </div>
+
+            <div className="weather-data">
+              <div className="temperature">
+                {/* convert celsius to fahrenheit */}
+                {`${Math.round(weather.main.temp * (9 / 5) + 32)}°f`}
+              </div>
+              <div className="description">
+                {`${weather.weather[0].main}`}
+              </div>
+            </div>
+          </div>
+        ) : (null)}
+
 
       </main>
 
