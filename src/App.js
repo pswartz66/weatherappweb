@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import keys from './key';
+import Day from './components/Day';
 
 const API = {
   key: keys.APIKEY,
   base_url: "http://api.openweathermap.org/data/2.5/"
 }
 
-// const url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={YOUR API KEY}"
+const forecast_url = `http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=${API.key}`
 
 function App() {
   const [query, setQuery] = useState('')
@@ -77,8 +78,14 @@ function App() {
           </div>
         ) : (null)}
 
+        <section className="forecast">
+          <Day url={forecast_url}/>
+
+        </section>
 
       </main>
+
+
 
     </div>
   );
